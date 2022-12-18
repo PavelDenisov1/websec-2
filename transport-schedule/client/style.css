@@ -18,12 +18,18 @@ body{
 }
 
 .stops-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 400px;
 }
 
 @media (max-width: 1000px) {
     .container{
         width: calc(100% - 1px);
+    }
+    .stops-content{
+        width: 900px;
     }
 }
 
