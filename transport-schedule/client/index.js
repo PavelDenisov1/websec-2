@@ -27,14 +27,14 @@ socket.on("getFirstArrivalToStop", msg => {
 
 
 let script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCNj8SA6tXXHS2GKeC5FM8zSHWqwkEd6g8&map_ids=60038a196631f164&callback=initMap';
+script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC_XtjI4iU9clgLx1y8_bZSVCAn2HH_hhs&map_ids=4da68f3de208c999&callback=initMap';
 script.async = true;
 
 window.initMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.2134, lng: 50.1799},
         zoom: 16,
-        mapId: '60038a196631f164'
+        mapId: '4da68f3de208c999'
     });
 
     socket.emit("init map");
